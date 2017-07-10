@@ -1,3 +1,19 @@
+## A simple Angular2 Excercise
+
+I have forked a Angular2 starter kit and performed a simple exercise. You will find the original `README.md` below. Use it to run the app locally.
+
+## Simple instructions
+
+Follow these simple instructions to run this repository.
+
+1. Clone this repo.
+2. run `npm i`.
+3. run `npm run start`.
+
+The original `README.md` contents are below.
+
+<hr />
+
 <img width="150" src="https://i.cloudup.com/zfY6lL7eFa-3000x3000.png" />
 <img width="50" src="https://angular.io/resources/images/logos/angular/angular.svg" />
 
@@ -61,5 +77,3 @@ Structure of dist folder:
 ## Note
 
 All html and css are from: http://www.w3schools.com/howto/
-
-
