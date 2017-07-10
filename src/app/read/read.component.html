@@ -1,0 +1,11 @@
+<div class="total">
+  <h2>Current Total</h2>
+  <section>{{(count$ | async)?.total}}</section>
+</div>
+
+<div class="history">
+  <h2>User History</h2>
+  <div class="animation" *ngFor="let number of (count$ | async)?.numbers">
+    <section>{{number}}</section>
+  </div>
+</div>

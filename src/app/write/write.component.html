@@ -1,0 +1,7 @@
+<h2>Write component</h2>
+
+<form class="form" [formGroup]="form">
+  <app-ui-input label="Number" placeholder="Enter number...." [control]="form.get('number')"></app-ui-input>
+
+  <app-ui-button [disabled]="!form.valid"  text="Add Number" (click)="submitNumber()"></app-ui-button>
+</form>

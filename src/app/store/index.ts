@@ -7,6 +7,8 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 import { feedReducer, IFeed } from './feed/feed.reducer';
 import { profileReducer, IProfile } from './profile/profile.reducer';
+import { countReducer, ICount } from './count/count.reducer';
+import { CountEffects } from './count/count.effects';
 import { ProfileEffects } from './profile/profile.effects';
 import { FeedEffects } from './feed/feed.effects';
 import { environment } from '../../environments/environment';
@@ -19,13 +21,15 @@ export interface IAppState {
   feed: IFeed[];
   profile: IProfile;
   weather: IWeather;
+  count: ICount;
 }
 
 // all new reducers should be define here
 const reducers = {
   feed: feedReducer,
   profile: profileReducer,
-  weather: weatherReducer
+  weather: weatherReducer,
+  count: countReducer,
 };
 
 const productionReducer: ActionReducer<IAppState> = combineReducers(reducers);
@@ -56,5 +60,6 @@ export const instrumentation: ModuleWithProviders =
 export const effects: ModuleWithProviders[] = [
   EffectsModule.run(ProfileEffects),
   EffectsModule.run(FeedEffects),
-  EffectsModule.run(WeatherEffects)
+  EffectsModule.run(WeatherEffects),
+  EffectsModule.run(CountEffects),
 ];
