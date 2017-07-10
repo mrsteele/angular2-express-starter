@@ -1,14 +1,15 @@
 ## A simple Angular2 Excercise
 
-I have forked a Angular2 starter kit and performed a simple exercise. You will find the original `README.md` below. Use it to run the app locally.
+I have forked an Angular2 starter kit and performed a simple exercise. You will find the original `README.md` below.
 
-## Simple instructions
+## Simple Instructions
 
 Follow these simple instructions to run this repository.
 
-1. Clone this repo.
+1. Clone the repo.
 2. run `npm i`.
 3. run `npm run start`.
+4. Navigate to `http://localhost:4002` (unless you have a PORT env variable declared).
 
 The original `README.md` contents are below.
 
